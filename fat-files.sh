@@ -21,7 +21,7 @@ min_size=$2
 # Output file
 output_file=$3
 
-# Trovo tutti i file piÃ¹ grandi seguendo i paramentri 
+# Trovo tutti i file più grandi seguendo i paramentri 
 find "$dir" -type f -size +"$min_size"c -exec ls -lh {} \; | awk '{ print $5 " " $9 }' > "$output_file"
 
 echo "Listato salvato in $output_file"
