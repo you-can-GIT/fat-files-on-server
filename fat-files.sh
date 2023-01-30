@@ -6,7 +6,7 @@
 #  ./big_files_search.sh /tmp 500000 file_grandi_in_tmp.txt
 #  Roberto 
 
-# Controllo se sono stati passati le variabile
+# Controllo se sono stati passate le variabile
 if [ $# -lt 3 ]; then
   echo "Usage: $0 <dir> <min_size> <output_file>"
   exit 1
